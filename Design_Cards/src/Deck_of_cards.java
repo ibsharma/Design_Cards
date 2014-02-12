@@ -2,7 +2,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 
-
+/*
+ * uses all the attributes of the Card class
+ */
 public class Deck_of_cards {
 	
 	private ArrayList<Card>  cardList = new ArrayList<Card>();
@@ -12,7 +14,7 @@ public class Deck_of_cards {
 	Deck_of_cards()
 	{
 		for(int i=0; i<4; i++)
-		{
+		{//
 			for(int j=0; j<13; j++)
 			{
 				cardList.add (new Card(Card.ranks[j],Card.suits[i]));

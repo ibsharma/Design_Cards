@@ -1,5 +1,5 @@
 /*
- *  Skypirate 
+ *  Card Class having all properties specific to a Card.
  */
 
 import java.util.Comparator;
@@ -12,8 +12,8 @@ public class Card implements Comparable<Card> {
 			"9", "10", "Jack", "Queen", "King" };
 	public static String suits[] = { "Spade", "Heart", "Club", "Diamond" };
 	
-	public static String p_ranks[] = {"Jack","9", "Queen", "King", "10", "Ace"  };
-	public static String p_suits[] = { "Spade", "Heart", "Club", "Diamond" };
+	public static String pRanks[] = {"Jack","9", "Queen", "King", "10", "Ace"  };
+	public static String pSuits[] = { "Spade", "Heart", "Club", "Diamond" };
 
 
 	Card(String rank, String suit) {
@@ -52,7 +52,6 @@ public class Card implements Comparable<Card> {
 		else
 			return false;
 	}
-	
 
 	@Override
 	public int compareTo(Card o) {
@@ -120,7 +119,4 @@ public class Card implements Comparable<Card> {
 				return 0;
 		}
 	}
-
-	}
-
-
+}
